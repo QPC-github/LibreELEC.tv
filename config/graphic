@@ -119,4 +119,6 @@ get_graphicdrivers() {
 
   # remove duplicate entries
   XORG_DRIVERS="$(echo $XORG_DRIVERS | xargs -n1 | sort -u | xargs)"
+
+  VAAPI_SUPPORT="yes"
 }
